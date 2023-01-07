@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="735.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.topicmodling_v2.Controller">
+   <children>
+      <AnchorPane layoutX="2.0" prefHeight="76.0" prefWidth="808.0" styleClass="backgroundColor" stylesheets="@style.css">
+         <children>
+            <ImageView fitHeight="89.0" fitWidth="75.0" layoutX="31.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+               <effect>
+                  <DropShadow height="79.62" radius="37.845" spread="0.34" width="73.76">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="100.0" layoutY="-5.0" opacity="0.92" prefHeight="102.0" prefWidth="536.0" text="Topic Classification" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB Bold" size="73.0" />
+               </font>
+            </Label>
+            <Label layoutX="628.0" layoutY="3.0" prefHeight="26.0" prefWidth="157.0" text="Realized by:" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="657.0" layoutY="65.0" prefHeight="26.0" prefWidth="117.0" stylesheets="@style.css" text="Imad QADDOURI" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="657.0" layoutY="33.0" prefHeight="26.0" prefWidth="117.0" stylesheets="@style.css" text="Anas TALHAOUI" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB Bold" size="21.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="43.0" fitWidth="48.0" layoutX="614.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@person2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="43.0" fitWidth="48.0" layoutX="614.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@person2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="101.0" prefHeight="634.0" prefWidth="230.0" styleClass="backgroundColor" stylesheets="@style.css">
+         <children>
+            <Separator layoutX="40.0" layoutY="324.0" prefHeight="3.0" prefWidth="150.0" />
+            <Label layoutX="8.0" layoutY="22.0" opacity="0.95" prefHeight="29.0" prefWidth="181.0" text="Choose Parameters" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="118.0" opacity="0.95" prefHeight="26.0" prefWidth="218.0" text="Minimal Frequence :" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB Bold" size="21.0" />
+               </font>
+            </Label>
+            <TextField fx:id="MinimalFrequence" layoutX="72.0" layoutY="155.0" opacity="0.8" prefHeight="34.0" prefWidth="86.0" style="-fx-text-fill: #FFFFFF; -fx-background-color: #0078D7; -fx-background-insets: 0; -fx-background-radius: 20; -fx-border-color: #FFFFFF; -fx-border-radius: 20;" text="0.001">
+               <font>
+                  <Font name="Agency FB Bold" size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="PathOfTopicsDirectory" layoutX="8.0" layoutY="395.0" opacity="0.8" prefHeight="34.0" prefWidth="210.0" style="-fx-text-fill: #FFFFFF; -fx-background-color: #0078D7; -fx-background-insets: 0; -fx-background-radius: 20; -fx-border-color: #FFFFFF; -fx-border-radius: 20;" text="src/main/resources/Topics">
+               <font>
+                  <Font name="Agency FB Bold" size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="21.0" layoutY="351.0" opacity="0.95" text="Path Of Topics Directory :" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB Bold" size="21.0" />
+               </font>
+            </Label>
+            <Separator layoutX="40.0" layoutY="451.0" opacity="0.89" prefHeight="2.0" prefWidth="150.0" />
+            <Button fx:id="run_button" layoutX="37.0" layoutY="493.0" mnemonicParsing="false" onAction="#run" opacity="0.92" prefHeight="88.0" prefWidth="156.0" style="-fx-cursor: Hand; -fx-background-color: transparent;" stylesheets="@style_run.css" />
+            <TextField fx:id="PathOfDocumentToClassify" layoutX="8.0" layoutY="270.0" opacity="0.8" prefHeight="34.0" prefWidth="210.0" style="-fx-text-fill: #FFFFFF; -fx-background-color: #0078D7; -fx-background-insets: 0; -fx-background-radius: 20; -fx-border-color: #FFFFFF; -fx-border-radius: 20;" text="src/main/resources/Topics/culture/document_1.txt">
+               <font>
+                  <Font name="Agency FB Bold" size="16.0" />
+               </font>
+            </TextField>
+            <Separator layoutX="40.0" layoutY="208.0" prefHeight="3.0" prefWidth="150.0" />
+            <Label layoutX="4.0" layoutY="231.0" opacity="0.95" text="Path Of Document To Classify :" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB Bold" size="21.0" />
+               </font>
+            </Label>
+            <Separator layoutX="12.0" layoutY="76.0" prefHeight="3.0" prefWidth="150.0" />
+         </children>
+      </AnchorPane>
+      <TabPane layoutX="231.0" layoutY="101.0" prefHeight="634.0" prefWidth="578.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab fx:id="tab1" text="Classification">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea fx:id="area1" editable="false" layoutX="-4.0" layoutY="-8.0" prefHeight="616.0" prefWidth="586.0" style="-fx-text-fill: #000000;">
+                           <font>
+                              <Font name="Agency FB Bold" size="100.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tab2" text="Similarity">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea fx:id="area2" editable="false" prefHeight="606.0" prefWidth="578.0">
+                           <font>
+                              <Font name="Agency FB" size="18.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tab3" text="Document BOW">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea fx:id="area3" editable="false" prefHeight="608.0" prefWidth="578.0">
+                           <font>
+                              <Font name="Agency FB" size="18.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tab4" text="Topics BOWs">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea fx:id="area4" editable="false" prefHeight="603.0" prefWidth="578.0">
+                           <font>
+                              <Font name="Agency FB" size="18.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
